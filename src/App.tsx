@@ -2,6 +2,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import { ProtectedRoute } from './components/layout/ProtectedRoute';
 import { LoginPage } from './pages/auth/LoginPage';
 import { DashboardPage } from './pages/dashboard/DashboardPage';
+import { BillingPage } from './pages/billing/BillingPage';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Route element={<ProtectedRoute />}>
         <Route path="/" element={<DashboardPage />} />
         {/* Placeholder for future modules */}
-        <Route path="/billing" element={<div>POS System Placeholder</div>} />
+        <Route path="/billing" element={<BillingPage />} />
         <Route path="/inventory" element={<div>Inventory System Placeholder</div>} />
       </Route>
 
